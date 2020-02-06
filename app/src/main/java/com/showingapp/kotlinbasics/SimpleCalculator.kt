@@ -1,5 +1,5 @@
 package com.showingapp.kotlinbasics
-import Operations.*
+import com.showingapp.kotlinbasics.Operations.*
 
 fun main(args:Array<String>) {
     val n1: Double? = MathLib.getInput("Number 1 :")

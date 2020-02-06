@@ -1,3 +1,5 @@
+package com.showingapp.kotlinbasics
+
 fun main(args:Array<String>) {
     val colors = arrayOf("red","green")
     val values = intArrayOf(1,2,3,4)
