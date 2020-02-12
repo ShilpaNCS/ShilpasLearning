@@ -26,4 +26,23 @@ fun main(args: Array<String>) {
     val formatter = NumberFormat.getCurrencyInstance()
     println("Item2 price ${formatter.format(item2.price)}")
 
+    val item1 = Shirt( "L", 34.5)
+
+    println(item1)
+
+    val item22 = Pants("XL", 45.67)
+
+    println(item22)
+
+    val mostExpensive : SealedClothing =
+        if(item1.price > item22.price) item1 else item22
+
+    val instuctions: String = when(mostExpensive) {
+        is Shirt -> "Found Shirt"
+        is Pants -> "Found Pants"
+    }
+
+    println(instuctions)
+
+
 }
